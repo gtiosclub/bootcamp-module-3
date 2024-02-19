@@ -14,6 +14,10 @@ instructions on how to do so.
 Once you've cloned the repo, open the CarsApp project using Xcode if you
 haven't already.
 
+## Intro
+
+In this module, you'll be building the logic for a fun Car Catalog App! This app presents the user with a list of available cars, and relevant information about each one. The UI has already been created for you, so please don't change any of it.
+
 ## TODO
 
 Within CarsApp, go to the TODO folder and complete parts 1-3 based on the provided instructions. Complete the parts in the correct order, as the instructions are worded with that in mind.
