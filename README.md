@@ -24,3 +24,8 @@ If any errors appear when attempting to run the app, it's probably because of on
 - You have a mistake in your code. Find it and fix it.
 - You haven't selected the development account you will use for this project. If that's the case, go to folders and find the CarsApp directory at the top-most level (with an appstore logo beside it). Click on CarsApp under "Targets". Open the "Signing & Capabilities" tab. Next to "Team", select your account from the dropdown menu.
 
+## Submission
+
+Make sure you have committed and pushed your local changes to the remote repo, so that we can see your work when we access this link. Refer to module-0 and the Git slides from Day 2 if you are having trouble, or reach out via Discord.
+
+To submit your work, paste the link for the forked repo next to your name under Week 3 &rarr; Assignment of the Student Dashboard (Notion). Make sure you are logged into your Notion account, otherwise you won't have edit permissions.
