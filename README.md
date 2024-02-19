@@ -22,7 +22,7 @@ Once you finish all parts, run the application using Cmd+R. The simulator takes 
 
 If any errors appear when attempting to run the app, it's probably because of one of the following reasons:
 - You have a mistake in your code. Find it and fix it.
-- You haven't selected the development account you will use for this project. If that's the case, go to folders and find the CarsApp directory at the top-most level (with an appstore logo beside it). Click on CarsApp under "Targets". Open the "Signing & Capabilities" tab. Next to "Team", select your account from the dropdown menu.
+- You haven't selected the development account you will use for this project. If that's the case, open the side bar on the left, look at the folders hierarchy and find the CarsApp directory at the top-most level (with an appstore logo beside it). Click on that. Next, click on CarsApp under "Targets". Open the "Signing & Capabilities" tab. Next to "Team", select your account from the dropdown menu.
 
 ## Submission
 
