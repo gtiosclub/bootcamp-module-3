@@ -17,8 +17,71 @@ import Foundation
             (3) Test your implementation with very basic test cases.
  */
 enum CarBrand: String, CaseIterable {
-    case none, Mercedes
-
+    case none
+    case Mercedes
+    case BMW
+    case Toyota
+    case Lamborghini
+    case Porsche
+    case Ford
+    
+    var brand_name: String {
+        switch self {
+        case.none:
+            return "none"
+        case.Mercedes:
+            return "Mercedes"
+        case.BMW:
+            return "BMW"
+        case.Toyota:
+            return "Toyota"
+        case.Lamborghini:
+            return "Lamborghini"
+        case.Porsche:
+            return "Porsche"
+        case.Ford:
+            return "Ford"
+        }
+    }
+    
+    var year_founded: String {
+        switch self {
+        case.none:
+            return "none"
+        case.Mercedes:
+            return "1926"
+        case.BMW:
+            return "1916"
+        case.Toyota:
+            return "1937"
+        case.Lamborghini:
+            return "1963"
+        case.Porsche:
+            return "1948"
+        case.Ford:
+            return "1903"
+        }
+    }
+    
+    var fact: String {
+        switch self {
+        case.none:
+            return "none"
+        case.Mercedes:
+            return "Mercedes Benz invented the first gasoline-powered automobile."
+        case.BMW:
+            return "Mercedes Benz invented the first gasoline-powered automobile."
+        case.Toyota:
+            return "Toyota is still a family business."
+        case.Lamborghini:
+            return "Both the Dubai and Italian Police use Lamborghini’s."
+        case.Porsche:
+            return "Porsche was an early adopter of airbag safety systems."
+        case.Ford:
+            return "Henry Ford and Thomas Edison were lifelong friends."
+        }
+    }
+    
 }
 
 
