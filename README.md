@@ -1,3 +1,5 @@
+[← Module 2](https://github.com/gtiosclub/bootcamp-module-2) • [Module 4 →](https://github.com/gtiosclub/bootcamp-module-4)
+
 # Module 3: Enums, Structs, Classes
 
 
