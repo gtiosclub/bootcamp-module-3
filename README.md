@@ -7,11 +7,9 @@ In this module, we'll go over enums, structs, and classes.
 
 ## Getting Started
 
-First, fork the repo into your own Github account and clone the forked
-repo onto your local device.
+Clone this repo to your local device. 
 
-Refer to [module 0](https://github.com/gtiosclub/bootcamp-module-0) for
-instructions on how to do so.
+Refer to the [Assignments](https://gt-ios-club.notion.site/Assignments-1b6cb97d5c7b467d9bc176de64578453?pvs=4) notion page on how to do so.
 
 Once you've cloned the repo, open the CarsApp project using Xcode if you
 haven't already.
@@ -30,8 +28,9 @@ If any errors appear when attempting to run the app, it's probably because of on
 - You have a mistake in your code. Find it and fix it.
 - You haven't selected the development account you will use for this project. If that's the case, open the side bar on the left, look at the folders hierarchy and find the CarsApp directory at the top-most level (with an appstore logo beside it). Click on that. Next, click on CarsApp under "Targets". Open the "Signing & Capabilities" tab. Next to "Team", select your account from the dropdown menu.
 
+
 ## Submission
 
-Make sure you have committed and pushed your local changes to the remote repo, so that we can see your work when we access this link. Refer to module-0 and the Git slides from Day 2 if you are having trouble, or reach out via Discord.
+Check the [Assignments](https://gt-ios-club.notion.site/Assignments-1b6cb97d5c7b467d9bc176de64578453?pvs=4) notion page for submission instructions! 
 
-To submit your work, paste the link for the forked repo next to your name under Week 3 &rarr; Assignment of the Student Dashboard (Notion). Make sure you are logged into your Notion account, otherwise you won't have edit permissions.
+If you are having trouble, feel free to reach out via Discord.
