@@ -24,7 +24,7 @@ import Foundation
 /*
  TODO: Written question
     Why did we decide to use a Struct instead of a Class to represent a car model?
- 
+ Structs are value types unlike classes which are reference types.
     (type here)
  */
 
@@ -34,20 +34,24 @@ struct CarModel: Identifiable, Hashable {
     let id: String // DO NOT EDIT THIS. This is the model id, and is used by the UI.
     
     // TODO: complete the struct's implementation
-    
+    let brand: CarBrand
+    let name: String
+    let topSpeed: Int
+    let color: String
+    let fuelCapacity: Int
     
     // TODO: These are functions used by the UI to display the model's data, right now they return default values. Fix it such that it returns the correct value.
     
     func getBrandYear() -> String {
-        return "1920"
+        return brand.year
     }
     
     func getBrandFact() -> String {
-        return "Mercedes Benz invented the first gasoline-powered automobile."
+        return brand.fact
     }
     
     func getBrandName() -> String {
-        return "Mercedes"
+        return brand.carName
     }
     
     func getModelID() -> String {
@@ -55,19 +59,19 @@ struct CarModel: Identifiable, Hashable {
     }
     
     func getModelName() -> String {
-        return "G-Wagon"
+        return name
     }
     
     func getTopSpeed() -> Int {
-        return 120
+        return topSpeed
     }
     
     func getColor() -> String {
-        return "Red"
+        return color
     }
     
     func getFuel() -> Int {
-        return 100
+        return fuelCapacity
     }
     
 }
