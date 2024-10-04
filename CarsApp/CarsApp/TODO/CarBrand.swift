@@ -17,9 +17,22 @@ import Foundation
             (3) Test your implementation with very basic test cases.
  */
 enum CarBrand: String, CaseIterable {
-    case none, Mercedes
-
+    case none, Mercedes, BMW, Toyota, Lamborghini, Porsche, Ford
+    
+    var carName: String {
+        return self.rawValue
+    }
+    
+    var year: String {
+        return carFacts[self.rawValue]?["year_founded"] as? String ?? "no year"
+    }
+    
+    var fact: String {
+        return carFacts[self.rawValue]?["fact"] as? String ?? "No facts"
+    }
 }
+
+
 
 
 // USE THIS DICTIONARY FOR THE DATA IN YOUR ENUM IMPLEMENTATION:
