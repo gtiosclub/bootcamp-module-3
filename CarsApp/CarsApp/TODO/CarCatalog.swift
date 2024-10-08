@@ -25,7 +25,18 @@ class CarCatalog {
      NOTE: The ids of the cars you provide must be unique, otherwise the app will crash.
     */
     init() {
-
+        let car1 = CarModel(id: "M001", brand: .Mercedes, modelName: "G-Wagon", topSpeed: 220,
+            color: "Black", fuelCapacity: 100)
+        let car2 = CarModel(id: "B001", brand: .BMW, modelName: "X5", topSpeed: 240, color: "White", fuelCapacity: 95)
+        let car3 = CarModel(id: "T001", brand: .Toyota, modelName: "Corolla", topSpeed: 180, color: "Silver", fuelCapacity: 55)
+        let car4 = CarModel(id: "L001", brand: .Lamborghini, modelName: "Aventador", topSpeed: 350, color: "Yellow", fuelCapacity: 85)
+        let car5 = CarModel(id: "P001", brand: .Porsche, modelName: "911", topSpeed: 330, color: "Red", fuelCapacity: 90)
+        
+        carsAvailable = [car1: 5, car2: 3, car3: 10, car4: 2, car5: 4]
+        
+        displayedCars = Array(carsAvailable.keys)
+        
+        favourites = []
     }
     
     
@@ -34,8 +45,11 @@ class CarCatalog {
         This function gets called by the UI whenever the user wants to ADD/REMOVE this car from their favourites list. Change the state of the favourites array to accomplish this.
      */
     func toggleFavourite(car: CarModel) {
-        
- 
+        if let index = favourites.firstIndex(of: car) {
+            favourites.remove(at: index)
+        } else {
+            favourites.append(car)
+        }
     }
     
     /*
@@ -43,8 +57,7 @@ class CarCatalog {
         This function gets called by the UI whenever the user wants to view the amount of cars available from a certain model.
      */
     func getCarAvailability(car: CarModel) -> Int {
-        
-
+        return carsAvailable[car] ?? 0
     }
     
     /*
@@ -53,7 +66,11 @@ class CarCatalog {
         NOTE: make sure you handle the case where it's 'none', as it implies that we don't want a filter.
      */
     func filterCarsBy(brand: CarBrand) {
-
+        if brand == .none {
+            displayedCars = Array(carsAvailable.keys)
+        } else {
+            displayedCars = carsAvailable.keys.filter { $0.brand == brand }
+        }
     }
     
     

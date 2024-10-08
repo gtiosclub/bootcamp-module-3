@@ -25,7 +25,13 @@ import Foundation
  TODO: Written question
     Why did we decide to use a Struct instead of a Class to represent a car model?
  
-    (type here)
+    We use a struct instead of a class because structs are value types, meaning they are copied
+    when passed around, ensuring immutability by default. This is ideal for representing car
+    models since their attributes like top speed, model name, and fuel capacity generally do
+    not change once set. Structs also offer better performance as they are stored on the stack,
+    making them more efficient when managing simple, immutable data. Additionally, car models
+    don't need inheritance or reference semantics, which makes structs the better fit for this
+    use case.
  */
 
 
@@ -34,42 +40,45 @@ struct CarModel: Identifiable, Hashable {
     let id: String // DO NOT EDIT THIS. This is the model id, and is used by the UI.
     
     // TODO: complete the struct's implementation
-    
+    let brand: CarBrand
+    let modelName: String
+    let topSpeed: Int
+    let color: String
+    let fuelCapacity: Int
     
     // TODO: These are functions used by the UI to display the model's data, right now they return default values. Fix it such that it returns the correct value.
     
     func getBrandYear() -> String {
-        return "1920"
+        return brand.yearFounded
     }
-    
+       
     func getBrandFact() -> String {
-        return "Mercedes Benz invented the first gasoline-powered automobile."
+        return brand.fact
     }
-    
+       
     func getBrandName() -> String {
-        return "Mercedes"
+        return brand.brandName
     }
-    
+       
     func getModelID() -> String {
-        return id // Something like M983
+        return id
     }
-    
+       
     func getModelName() -> String {
-        return "G-Wagon"
+        return modelName
     }
-    
+       
     func getTopSpeed() -> Int {
-        return 120
+        return topSpeed
     }
-    
+       
     func getColor() -> String {
-        return "Red"
+        return color
     }
-    
+       
     func getFuel() -> Int {
-        return 100
+        return fuelCapacity
     }
-    
 }
 
 
