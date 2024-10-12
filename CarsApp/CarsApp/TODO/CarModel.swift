@@ -21,11 +21,13 @@ import Foundation
     Think about why we decide to use a Struct instead of a Class, perhaps it’s because the data never changes?
  */
 
+
+
 /*
  TODO: Written question
     Why did we decide to use a Struct instead of a Class to represent a car model?
  
-    (type here)
+    Because we don't need to change the car info after it's been established so no need for reference values. Also, Struct is just a lot faster and smoother than class.
  */
 
 
@@ -34,20 +36,25 @@ struct CarModel: Identifiable, Hashable {
     let id: String // DO NOT EDIT THIS. This is the model id, and is used by the UI.
     
     // TODO: complete the struct's implementation
-    
+    var brand: CarBrand;
+    var modelName: String;
+    var topSpeed: Int;
+    var color: String;
+    var fuelCapacity: Int;
+    var favorited: Bool;
     
     // TODO: These are functions used by the UI to display the model's data, right now they return default values. Fix it such that it returns the correct value.
     
     func getBrandYear() -> String {
-        return "1920"
+        return brand.year_founded
     }
     
     func getBrandFact() -> String {
-        return "Mercedes Benz invented the first gasoline-powered automobile."
+        return brand.fact
     }
     
     func getBrandName() -> String {
-        return "Mercedes"
+        return brand.brand_Name
     }
     
     func getModelID() -> String {
@@ -55,21 +62,24 @@ struct CarModel: Identifiable, Hashable {
     }
     
     func getModelName() -> String {
-        return "G-Wagon"
+        return modelName
     }
     
     func getTopSpeed() -> Int {
-        return 120
+        return topSpeed
     }
     
     func getColor() -> String {
-        return "Red"
+        return color
     }
     
     func getFuel() -> Int {
-        return 100
+        return fuelCapacity
     }
     
+    func getFavorite() -> Bool {
+        return favorited
+    }
 }
 
 
